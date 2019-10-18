@@ -12,10 +12,10 @@ from starlette.staticfiles import StaticFiles
 export_file_url = 'https://drive.google.com/uc?export=download&id=1-5TFk9hEtQ4IoC6rza3cxvX3gYkO7WNb'
 export_file_name = 'export.pkl'
 
-classes = ['Banded Racer(Non-Venomous)','Checkered Keelback(Non-Venomous)','Common Krait(Venomous)',
-          'Common Rat Snake(Non-Venomous)','Common Sand Boa(Non-Venomous)','Common Trinket(Non-Venomous)',
-          'Green Tree Vine(Non-Venomous)','Indian Rock Python(Non-Venomous)','King Cobra(Venomous)',
-          'Monocled Cobra(Venomous)','Russells Viper(Venomous)','Saw-scaled Viper(Venomous)','Spectacled Cobra(Venomous)'
+classes = ['Banded Racer','Checkered Keelback','Common Krait',
+          'Common Rat Snake','Common Sand Boa','Common Trinket',
+          'Green Tree Vine','Indian Rock Python','King Cobra',
+          'Monocle Cobra','Russells Viper','Saw-scaled Viper','Spectacled Cobra'
           ]
 path = Path(__file__).parent
 
