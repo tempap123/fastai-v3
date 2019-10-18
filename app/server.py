@@ -9,10 +9,14 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1-5TFk9hEtQ4IoC6rza3cxvX3gYkO7WNb'
 export_file_name = 'export.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['Banded Racer(Non-Venomous)','Checkered Keelback(Non-Venomous)','Common Krait(Venomous)',
+          'Common Rat Snake(Non-Venomous)','Common Sand Boa(Non-Venomous)','Common Trinket(Non-Venomous)',
+          'Green Tree Vine(Non-Venomous)','Indian Rock Python(Non-Venomous)','King Cobra(Venomous)',
+          'Monocled Cobra(Venomous)','Russells Viper(Venomous)','Saw-scaled Viper(Venomous)','Spectacled Cobra(Venomous)'
+          ]
 path = Path(__file__).parent
 
 app = Starlette()
