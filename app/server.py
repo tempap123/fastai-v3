@@ -65,7 +65,10 @@ async def analyze(request):
     img_bytes = await (img_data['file'].read())
     img = open_image(BytesIO(img_bytes))
     prediction = learn.predict(img)[0]
-    return JSONResponse({'result': str(prediction)})
+        if(str(prediction)=='Common_Krait' or str(prediction)=='King_Cobra' or str(prediction)=='Monocle_Cobra' or str(prediction)=='Russells_Viper' or str(prediction)=='Saw-scaled_Viper' or str(prediction)=='Spectacled_Cobra'):
+          return JSONResponse({'result': (str(prediction)+' , Venomous')})
+    else:
+          return JSONResponse({'result': (str(prediction)+' , Non-Venomous')})
 
 
 if __name__ == '__main__':
